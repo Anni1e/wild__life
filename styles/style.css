@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../src/img/leo.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+svg {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  width: 9.1vh;
+  height: 96.4vh;
+  position: fixed;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.87) 100%);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__counter {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  margin: 1.8vh auto;
+  text-align: center;
+  width: 9.1vh;
+  height: 4.1vh;
+  flex-shrink: 0;
+}
+.navigation__counter p {
+  display: inline-block;
+}
+.navigation__counter :nth-child(1) {
+  font-size: 2.8vh;
+  letter-spacing: -0.15vh;
+}
+.navigation__counter :nth-child(2) {
+  font-size: 3.5vh;
+  letter-spacing: 0.2vh;
+}
+.navigation__counter :nth-child(3) {
+  font-size: 1.7vh;
+  letter-spacing: -0.09vh;
+}
+.navigation__menu {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5vh;
+}
+.navigation__switch {
+  display: flex;
+  flex-direction: column;
+}
+.navigation__back {
+  width: 9.1vh;
+  height: 9.1vh;
+  background-color: #2c2c2e;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.navigation__back:hover {
+  background: #24632e;
+}
+.navigation__forward {
+  width: 9.1vh;
+  height: 9.1vh;
+  background-color: #2c2c2e;
+  transition: 0.5s;
+}
+.navigation__forward:hover {
+  background: #24632e;
+}
+.navigation__home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+}
+.navigation__home :nth-child(2) {
+  width: 2.4vh;
+}
+.navigation__home span {
+  width: 3.1vh;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.fotocard__logo {
+  display: flex;
+  gap: 1.8vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.4vh;
+}
+.fotocard__logo p {
+  color: #fff;
+  height: 2.3vh;
+  color: #fff;
+  text-align: center;
+  text-shadow: 9px 4px 21px rgba(0, 0, 0, 0.4);
+  font-family: "Roboto";
+  font-size: 2vh;
+  font-weight: 700;
+  letter-spacing: 0.41vh;
+}
+.fotocard__title {
+  width: 99.6vh;
+  height: 30.9vh;
+  margin: 11.8vh auto 0;
+}
+.fotocard__animal {
+  width: 53vh;
+  height: 45vh;
+  position: absolute;
+  right: 11vh;
+}
+.fotocard__animal hr {
+  position: absolute;
+  bottom: 17.5vh;
+  right: 44.5vh;
+  width: 34.1vh;
+  transform: rotate(90deg);
+}
+.fotocard__animal a {
+  color: #32d74b;
+  font-family: "Roboto";
+  font-size: 2.1vh;
+  font-weight: 300;
+}
+.fotocard__characteristic {
+  margin-top: 2.4vh;
+}
+.fotocard__characteristics {
+  display: flex;
+  gap: 8.7vh;
+}
+.fotocard__name {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 3.2vh;
+  font-weight: 300;
+  letter-spacing: 3;
+  width: 38.9vh;
+  margin-bottom: 4vh;
+}
+.fotocard__adventure {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 2.1vh;
+  font-weight: 700;
+}
+.fotocard__country {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 2.1vh;
+  font-weight: 300;
+  margin: 1vh 0 1.3vh;
+}
+.fotocard__descr {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1.6vh;
+  font-weight: 300;
+  line-height: 2.4vh;
+  letter-spacing: 0.6px;
+  margin-bottom: 1vh;
+}
+.fotocard__wildlife {
+  text-shadow: 9px 4px 21px rgba(0, 0, 0, 0.4);
+  font-family: "Roboto Condensed";
+  font-size: 26.3vh;
+  font-weight: 700;
+  background: linear-gradient(93deg, rgba(255, 255, 255, 0.95) 5.45%, rgba(255, 255, 255, 0.1) 106.63%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 20vh;
+  position: absolute;
+  top: 24.4vh;
+}
+.fotocard__explore {
+  width: 104vh;
+  text-shadow: 9px 4px 21px rgba(0, 0, 0, 0.4);
+  font-family: "Roboto";
+  font-size: 2.1vh;
+  font-weight: 900;
+  letter-spacing: 5.2vh;
+  max-height: 2.5vh;
+  background: linear-gradient(93deg, rgba(255, 255, 255, 0.73) 4.45%, rgba(255, 255, 255, 0.65) 106.63%);
+  position: absolute;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 22.1vh;
+  text-align: center;
+}
+.fotocard__value {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 4.3vh;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 1.2vh;
+}
+.fotocard__criterion {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 2.1vh;
+  font-weight: 700;
+  opacity: 0.3;
+}/*# sourceMappingURL=style.css.map */
